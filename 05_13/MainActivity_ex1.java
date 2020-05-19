@@ -33,6 +33,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //명시적인 intent를 사용해서 Main2Activity를 호출
                 Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+                //암시적 intent ->  Intent intent = new Intent("myintent");
+                //manifest파일 추가부분
+                //<intent-filter>
+                //<action android:name="myintent"/>
+                //<category android:name="android.intent.category.DEFAULT"/>
+                //</intent-filter>
                 int id = Integer.parseInt(Editid.getText().toString());
                 String name = Editname.getText().toString();
                 intent.putExtra("id", id);
