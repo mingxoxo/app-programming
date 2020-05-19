@@ -22,7 +22,7 @@ public class Main2Activity extends AppCompatActivity {
         int id = intent.getIntExtra("id", -1);
         String name = intent.getStringExtra("name");
 
-        id2.setText(id);
+        id2.setText(String.valueOf(id));
         name2.setText(name);
     }
 }
