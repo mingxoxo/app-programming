@@ -32,6 +32,9 @@ public class MainActivity extends AppCompatActivity { //상속한다.
         //menu인자에 내가 만들어놓은 menu를 받아오게 됨.
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.my_menu, menu);
+        //menu.add(0, 1, 0, "CAT"); java코드로 하는 법
+        //menu.add(0, 2, 0, "DOG");
+        //menu.add(0, 3, 0, "HUMAN");
         return true;
     }
 
