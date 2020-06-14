@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC5C5"
+    android:backgroundTint="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/TexttoSpeechText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FDCFCF"
+        android:text="Text to Speech"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ttseditText"
+        android:layout_width="match_parent"
+        android:layout_height="187dp"
+        android:ems="10"
+        android:hint="Type yout text to be spoken"
+        android:gravity="center_vertical"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/ttsbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="start speaking" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FDCFCF"
+        android:text="Speech to Text"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/srText"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="The recognized text will be shown" />
+
+    <TextView
+        android:id="@+id/srSysMsg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="System message will be shown" />
+
+    <Button
+        android:id="@+id/srButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="start Listening" />
+
+</LinearLayout>
